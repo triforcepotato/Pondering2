@@ -10,10 +10,10 @@ import SwiftUI
 struct ContentView: View {
     
     @State private var journalEntry = ""
+    @State private var lily = Image("lilyPad")
     
     var body: some View {
         
-        NavigationStack {
             ZStack {
                 
                 Image ("Pond")
@@ -36,8 +36,9 @@ struct ContentView: View {
                         .border(Color.green, width: 2)
                         .cornerRadius(5)
                     
-                    Button("Submit!") {
-                       
+                    Button("Submit") {
+                        // edit later 
+                            
                     }
                     .buttonStyle(.borderedProminent)
                     .tint(.teal)
@@ -46,14 +47,6 @@ struct ContentView: View {
                         .frame(height:550)
                     
                     
-                    Image("bananaPeel")
-                        .resizable()
-                    
-                    NavigationLink(destination: journalEntries()) {
-                        Text("View Journal Entries")
-                    }
-                    .tint(.teal)
-                    
                     
                     Spacer()
                     
@@ -61,9 +54,9 @@ struct ContentView: View {
                 .padding()
                 
             }//zstack
-        } //navstack
         
     } //view
+    
 } //struct
 
 struct ContentView_Previews: PreviewProvider {
