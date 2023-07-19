@@ -11,6 +11,7 @@
 		BDBB08002A68798400270803 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBB07FF2A68798400270803 /* ContentView.swift */; };
 		BDBB08022A68798500270803 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDBB08012A68798500270803 /* Assets.xcassets */; };
 		BDBB08052A68798500270803 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDBB08042A68798500270803 /* Preview Assets.xcassets */; };
+		BDBB080C2A687A9300270803 /* journalEntries.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBB080B2A687A9300270803 /* journalEntries.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		BDBB07FF2A68798400270803 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BDBB08012A68798500270803 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDBB08042A68798500270803 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BDBB080B2A687A9300270803 /* journalEntries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = journalEntries.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				BDBB07FD2A68798400270803 /* Pondering2App.swift */,
 				BDBB07FF2A68798400270803 /* ContentView.swift */,
+				BDBB080B2A687A9300270803 /* journalEntries.swift */,
 				BDBB08012A68798500270803 /* Assets.xcassets */,
 				BDBB08032A68798500270803 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDBB080C2A687A9300270803 /* journalEntries.swift in Sources */,
 				BDBB08002A68798400270803 /* ContentView.swift in Sources */,
 				BDBB07FE2A68798400270803 /* Pondering2App.swift in Sources */,
 			);

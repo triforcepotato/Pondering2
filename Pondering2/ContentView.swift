@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var journalEntry = ""
+    
     var body: some View {
         
-        @State private var journalEntry = ""
+        var pondTrash = [Image: bananaPeel, Image: trashbag, Image: crushedSoda]
         
         NavigationStack {
             ZStack {
@@ -36,13 +39,17 @@ struct ContentView: View {
                         .cornerRadius(5)
                     
                     Button("Submit!") {
-                        /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+                        pondTrash.remove (at: 0)
                     }
                     .buttonStyle(.borderedProminent)
                     .tint(.teal)
                                 
                     Spacer()
                         .frame(height:550)
+                    
+                    
+                    Image("bananaPeel")
+                        .resizable()
                     
                     NavigationLink(destination: journalEntries()) {
                         Text("View Journal Entries")
