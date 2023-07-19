@@ -13,8 +13,6 @@ struct ContentView: View {
     
     var body: some View {
         
-        var pondTrash = [Image: bananaPeel, Image: trashbag, Image: crushedSoda]
-        
         NavigationStack {
             ZStack {
                 
@@ -39,7 +37,7 @@ struct ContentView: View {
                         .cornerRadius(5)
                     
                     Button("Submit!") {
-                        pondTrash.remove (at: 0)
+                       
                     }
                     .buttonStyle(.borderedProminent)
                     .tint(.teal)
