@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     
     @State private var journalEntry = ""
-    @State private var lily = Image("lilyPad")
+    @State private var lily = ""
     
     var body: some View {
         
@@ -37,8 +37,7 @@ struct ContentView: View {
                         .cornerRadius(5)
                     
                     Button("Submit") {
-                        // edit later 
-                            
+                        lily = "lilyPad"
                     }
                     .buttonStyle(.borderedProminent)
                     .tint(.teal)
@@ -46,9 +45,17 @@ struct ContentView: View {
                     Spacer()
                         .frame(height:550)
                     
-                    
+                    Image(lily)
+                        
+                   
+                        .resizable(resizingMode: .stretch)
+                        .aspectRatio(contentMode: .fit)
+                        .padding(.bottom)
                     
                     Spacer()
+                        
+
+                                    
                     
                 }//vstack
                 .padding()
