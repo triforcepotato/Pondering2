@@ -36,7 +36,6 @@ struct ContentView: View {
                         Spacer()
                             .frame (height : 50)
                         
-                        
                         HStack {
                             
                             Spacer()
@@ -66,7 +65,6 @@ struct ContentView: View {
                     Spacer()
                         .frame(height : 30)
                         
-                    
                     Text("pick-me-ups!")
                         .font(.title)
                         .fontWeight(.semibold)
@@ -81,7 +79,6 @@ struct ContentView: View {
                         lily = "lilyPad"
                         duck = "duckArt"
                         flower = "flower"
-                        journalEntry = "" 
                     }
                     .buttonStyle(.borderedProminent)
                     .tint((Color(red: 149/255, green: 172/255, blue: 129/255)))
@@ -89,6 +86,18 @@ struct ContentView: View {
                     Spacer()
                         .frame(height:550)
                     
+                    
+                    Button("Clear") {
+                        journalEntry = ""
+                        lily = ""
+                        duck = ""
+                        flower = ""
+                    }
+                    .buttonStyle(.borderedProminent)
+                    .tint((Color(red: 149/255, green: 172/255, blue: 129/255)))
+                    
+                    Spacer()
+                        .frame(height : 0)
                     
                 }//vstack
                 .padding()
